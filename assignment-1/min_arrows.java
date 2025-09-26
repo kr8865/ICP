@@ -6,7 +6,7 @@ public class min_arrows {
         //points = [[10,16],[2,8],[1,6],[7,12]]
 
         int[][] points={{10,16},{2,8},{1,6},{7,12}};
-         Arrays.sort(points,(a,b)->Integer.compare(a[1],b[1]));
+         Arrays.sort(points,(a,b)->a[0]-b[0]);
         int si=points[0][0];
         int ei=points[0][1];
         int a=1;
