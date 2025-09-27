@@ -1,0 +1,82 @@
+1D [Array]
+
+What is an Array?
+An array is a linear data structure that stores elements of the same type in contiguous memory locations.
+A 1D array represents data in a single row (or line).
+Each element of an array can be uniquely identified by its index (0-based in Java).
+
+👉 Example:
+int arr[] = {1, 2, 3, 4, 5};
+Here:
+arr[0] = 1
+arr[4] = 5
+Iteration in a 1D Array
+
+Iteration means visiting each element of the array in a specific order.
+a) Forward Iteration
+Traverse from index 0 → n-1.
+👉 Example: 1 → 2 → 3 → 4 → 5
+for (int i = 0; i < arr.length; i++) {
+    System.out.print(arr[i] + " ");
+}
+
+b) Reverse Iteration
+Traverse from index n-1 → 0.
+👉 Example: 5 → 4 → 3 → 2 → 1
+for (int i = arr.length - 1; i >= 0; i--) {
+    System.out.print(arr[i] + " ");
+}
+
+
+
+
+
+
+c) Skipping Elements (Step Iteration)
+Traverse with step size > 1.
+👉 Example (step=2): 1 → 3 → 5
+for (int i = 0; i < arr.length; i += 2) {
+    System.out.print(arr[i] + " ");
+}
+d) Enhanced For-Loop
+for (int x : arr) {
+    System.out.print(x + " ");
+}
+
+Operations on Elements
+a) Accessing an Element
+int x = arr[2]; // 3rd element
+b) Updating an Element
+arr[2] = 10; // replaces 3rd element with 10
+c) Summation of Elements
+int sum = 0;
+for (int i = 0; i < arr.length; i++) {
+    sum += arr[i];
+}
+d) Searching an Element
+int key = 4;
+boolean found = false;
+for (int i = 0; i < arr.length; i++) {
+    if (arr[i] == key) {
+        found = true;
+        break;
+    }
+}
+e) Transformation of Elements
+👉 Example: Multiply each element by 2
+for (int i = 0; i < arr.length; i++) {
+    arr[i] *= 2;
+}
+f) Swapping Two Elements
+int temp = arr[0];
+arr[0] = arr[4];
+arr[4] = temp;
+g) Reversing an Array
+int left = 0, right = arr.length - 1;
+while (left < right) {
+    int temp = arr[left];
+    arr[left] = arr[right];
+    arr[right] = temp;
+    left++;
+    right--;
+}

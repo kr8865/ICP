@@ -1,0 +1,37 @@
+1. Introduction to 1D Arrays
+Definition & representation in memory
+Indexing (0-based)
+Static vs dynamic arrays
+
+2. Iteration Techniques 
+Forward iteration (0 → n-1)
+Reverse iteration (n-1 → 0)
+Step iteration (skipping elements)
+Enhanced for-loop (for-each)
+Dry-run on examples
+
+3. Operations on Elements 
+Accessing elements
+Updating values
+Summation (total, prefix sums, row/col-wise analogy)
+Searching (linear & binary search)
+Transformations (map, scale)
+Swapping, reversing
+
+4. Patterns and Conceptual Tricks
+Prefix sum technique
+Sliding window
+Two-pointer method
+Kadane’s algorithm (max subarray sum)
+Frequency arrays (counting)
+
+5. Advanced Traversal Examples 
+Rotating arrays (left/right shifts)
+Merging two sorted arrays
+Partitioning arrays (even–odd, negatives–positives)
+Next greater element concept
+
+6. Problem-Solving Session 
+Live coding walkthroughs
+Step-by-step dry runs
+Common pitfalls and optimization tips
