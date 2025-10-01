@@ -1,0 +1,74 @@
+Greedy Algorithm: Art of Efficient Problem-Solving
+
+With the ever-growing complexity of problems, the need for swift and effective solutions has become paramount. 
+One such tool in the arsenal of a programmer is the Greedy Algorithm, a powerful technique known for its simplicity and efficiency. 
+In this comprehensive guide, we will delve into the depths of the Greedy Algorithm, exploring its definition, benefits, and various use cases.
+
+What is Greedy Algorithm?
+Greedy Algorithm is a problem-solving strategy that makes the locally optimal choice at each stage with the hope of finding a global optimum.
+It follows the principle of making the most favorable decision at each step without considering the consequences of that decision in the long term. 
+This myopic approach often leads to near-optimal solutions and is particularly useful for optimization problems.
+
+5 Greedy Algorithm Ideas
+Activity Selection (Interval Scheduling)
+Choose maximum non-overlapping activities by sorting by finish time.
+Used in scheduling problems.
+
+Minimum Number of Platforms (Train Station Problem)
+Sort arrival & departure times, allocate platform when needed.
+Greedy ensures minimum platforms used.
+
+Jump Game (Minimum Jumps to Reach End of Array)
+Always jump to the farthest reachable index at each step.
+Minimizes total jumps.
+
+Greedy String Construction (Lexicographically Smallest String)
+At each step, choose the smallest possible character that still allows a valid solution.
+Example: remove k digits to form smallest number, or smallest subsequence of distinct characters.
+
+Coin Change (Minimum Coins)
+Always take the largest coin denomination possible first.
+Works when coin system is canonical (like Indian currency, US currency).
+
+
+
+
+Benefits of Using Greedy Algorithm
+Simplicity: One of the primary advantages of the Greedy Algorithm is its simplicity. The algorithm is easy to understand and implement, making it accessible even to novice programmers.
+Efficiency: Greedy algorithms are typically more efficient than other approaches, such as dynamic programming or brute force methods. They often have a lower time complexity, making them ideal for large-scale problems.
+Space Efficiency: In addition to being time-efficient, greedy algorithms often require less memory space, making them suitable for environments with limited resources.
+Intuitive Solutions: The locally optimal choices made by greedy algorithms often result in solutions that are intuitively appealing and easy to grasp.
+Applicability: Greedy algorithms find applications in a wide range of domains, including scheduling, optimization, and network routing, making them versatile tools for various problem domains.
+
+Different Types of Greedy Algorithm
+While the fundamental principle of the Greedy Algorithm remains constant across various applications, there exist different types of Greedy Algorithms tailored to specific problem domains :
+
+Pure Greedy Algorithms
+
+Pure greedy algorithms, also known as classical greedy algorithms, follow the core principles of the greedy approach without any additional constraints or modifications. These algorithms make locally optimal choices at each step with the aim of finding a globally optimal solution.
+Examples of pure greedy algorithms include Dijkstra's algorithm for finding the shortest path, Prim's and Kruskal's algorithms for finding minimum spanning trees, and the greedy algorithm for the fractional knapsack problem.
+
+
+Orthogonal Greedy Algorithms
+
+Orthogonal greedy algorithms, also referred to as generalized greedy algorithms, extend the concept of pure greedy algorithms by introducing additional constraints or considerations orthogonal to the primary objective. These constraints can include limitations on resources, dependencies between components, or conflicting objectives.
+Examples of orthogonal greedy algorithms include modified versions of traditional greedy algorithms that incorporate constraints on resource usage, precedence relationships in scheduling problems, or trade-offs between conflicting objectives in optimization tasks.
+
+
+
+
+
+
+Relaxed Greedy Algorithms
+
+Relaxed greedy algorithms, also known as approximate greedy algorithms or heuristic greedy algorithms, relax the strict optimality criterion of pure greedy algorithms in favor of computational efficiency or practical feasibility. These algorithms sacrifice optimality to achieve faster execution times or to handle problem instances with large input sizes.
+Examples of relaxed greedy algorithms include approximation algorithms for NP-hard problems, heuristic algorithms for combinatorial optimization, and greedy algorithms with early termination conditions to improve efficiency.
+
+
+Applications of Greedy Algorithm
+
+Fractional Knapsack Problem: In this classic optimization problem, the goal is to fill a knapsack with items to maximize the total value while staying within the weight constraint. The Greedy Algorithm can be used to select items based on their value-to-weight ratio, ensuring the most valuable items are chosen first.
+Dijkstra's Shortest Path Algorithm: Dijkstra's algorithm is used to find the shortest path between nodes in a graph with non-negative edge weights. At each step, the algorithm greedily selects the vertex with the smallest distance from the source node, gradually building the shortest path tree.
+Huffman Coding: Huffman coding is a technique used for lossless data compression, commonly employed in file compression algorithms. The Greedy Algorithm is utilized to construct an optimal prefix-free binary tree, where characters with higher frequencies are assigned shorter codewords.
+Activity Selection Problem: Given a set of activities with start and finish times, the goal is to select the maximum number of non-overlapping activities. The Greedy Algorithm can be applied by sorting the activities based on their finish times and selecting activities that do not conflict with the previously selected ones.
+Minimum Spanning Tree (MST): Kruskal's and Prim's algorithms are two popular methods for finding the minimum spanning tree in a weighted graph. Both algorithms employ a greedy approach to iteratively add edges with the smallest weight, ensuring that the resulting tree spans all vertices with the minimum possible total weight
